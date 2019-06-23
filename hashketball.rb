@@ -208,7 +208,7 @@ def biggestShoes
   end
 end
 
-#Using biggestShoes helper method to select and return their rebounds by first selecting their stats hash 
+#Using biggestShoes helper method to select and return their rebounds by first selecting their stats hash
 #that is nested inside the array and then calling :rebounds from that hash
 def big_shoe_rebounds
   biggestShoes[1][:rebounds]
