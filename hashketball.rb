@@ -143,15 +143,6 @@ end
 # good_practices
 
 
-# def num_points_scored
-# gameHash = game_hash
-#
-# gameHash.each do|location, value|
-#   value.each do|title, data|
-#     if data == :players
-#       return gameHash[location][value][title][:players][0]
-#
-#     end
-#
-# end
-# end
+def find_team(team_name)
+  all_teams.find { |team| team[:team_name] == team_name }
+end
