@@ -147,7 +147,7 @@ def players
   game_hash[:home][:players].merge(game_hash[:away][:players])
 end
 
-#Helper Method that collects the stats of a player
+#This also works as a Helper Method that collects the stats of a player
 def player_stats(playerName)
   players[playerName]
 end
