@@ -226,12 +226,20 @@ end
 
 def homeTeamPoints
   teamSelect("Brooklyn Nets")[:players].collect do |name, stats|
-    stats[:points].sum
+    stats[:points]
   end
 end
 
 def awayTeamPoints
   teamSelect("Charlotte Hornets")[:players].collect do|name, stats|
     stats[:points]
+  end
+end
+
+def winning_team
+  if homeTeamPoints.sum > awayTeamPoints.sum
+    "Brooklyn Nets"
+  else
+    "Charlotte Hornets"
   end
 end
