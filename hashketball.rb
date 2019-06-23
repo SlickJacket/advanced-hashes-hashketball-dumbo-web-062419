@@ -193,4 +193,6 @@ end
 
 def player_numbers(teamName)
   teamSelect(teamName)[:players].collect do|name, stats|
-    
+    stats[:number]
+  end
+end
