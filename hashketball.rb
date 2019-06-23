@@ -141,8 +141,3 @@ end
 # end
 #
 # good_practices
-
-
-def find_team(team_name)
-  all_teams.find { |team| team[:team_name] == team_name }
-end
