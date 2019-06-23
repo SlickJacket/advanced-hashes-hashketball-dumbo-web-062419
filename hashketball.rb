@@ -177,4 +177,6 @@ end
    end
  end
 
- 
+ def team_colors(teamName)
+
+ end
