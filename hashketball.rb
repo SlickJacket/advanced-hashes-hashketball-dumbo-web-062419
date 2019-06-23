@@ -162,3 +162,9 @@ end
 def shoe_size(playerName)
   stats(playerName)[:shoe]
 end
+
+ #Helper Method that outputs the teams
+ def teams
+   game_hash.values
+ end
+ 
