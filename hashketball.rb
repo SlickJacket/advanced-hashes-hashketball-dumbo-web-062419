@@ -191,8 +191,14 @@ def team_names
   end
 end
 
+#Using the teamSelect helper Method, we can select a particular team's play numbers by starting our loop
+#at the selected team, then going into the players of that team to collect their stats. stats[:number] returns
+#only the stats from the players with the key :number
 def player_numbers(teamName)
   teamSelect(teamName)[:players].collect do|name, stats|
     stats[:number]
   end
 end
+
+
+
