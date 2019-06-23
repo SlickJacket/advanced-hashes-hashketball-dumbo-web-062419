@@ -160,7 +160,7 @@ end
 
 #shoe_size also uses the stats method to find the shoe size of particular player
 def shoe_size(playerName)
-  stats(playerName)[:shoe]
+  player_stats(playerName)[:shoe]
 end
 
  #Helper Method that outputs the teams
