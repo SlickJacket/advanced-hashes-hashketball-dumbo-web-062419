@@ -231,4 +231,7 @@ def homeTeamPoints
 end
 
 def awayTeamPoints
-  teamSelect("Charlotte Hornets")[:players]
+  teamSelect("Charlotte Hornets")[:players].collect do|name, stats|
+    stats[:points]
+  end
+end
