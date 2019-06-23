@@ -199,3 +199,8 @@ def player_numbers(teamName)
     stats[:number]
   end
 end
+
+def biggestShoes
+  players.max_by do|name, stats|
+    stats[:shoe]
+  end
