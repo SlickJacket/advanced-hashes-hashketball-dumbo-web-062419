@@ -187,6 +187,6 @@ end
 #Uses the teams helper method and collects the keys :team_names into an array while returning that array
 def team_names
   teams.collect do|key|
-    key[:team_names]
+    key[:team_name]
   end
 end
