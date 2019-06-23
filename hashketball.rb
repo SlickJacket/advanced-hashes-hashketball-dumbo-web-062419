@@ -141,3 +141,14 @@ end
 # end
 #
 # good_practices
+
+#Helper Method that combines the players from both :home and :away
+def players
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
+
+#Helper Method that collects the stats of a player
+def stats(playerName)
+  players[playerName]
+end
+  
