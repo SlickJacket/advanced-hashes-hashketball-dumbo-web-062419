@@ -202,5 +202,5 @@ end
 
 def biggestShoes
   players.max_by do|name, stats|
-    stats[:shoe]
+    stats[:shoes]
   end
