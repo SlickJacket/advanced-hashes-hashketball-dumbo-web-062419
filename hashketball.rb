@@ -179,5 +179,5 @@ end
 
  def team_colors(teamName)
    teamSelect(teamName)[:colors]
-  
+
  end
