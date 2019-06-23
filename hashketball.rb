@@ -178,5 +178,7 @@ end
  end
 
  def team_colors(teamName)
-   teamSelect(teamName)[:colors]
+   teamColorsArray = []
+   teamColorsArray << teamSelect(teamName)[:colors]
+   return teamColorsArray
  end
