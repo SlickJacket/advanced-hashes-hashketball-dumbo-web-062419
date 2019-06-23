@@ -177,7 +177,16 @@ end
    end
  end
 
+#Utilizes the teamSelect helper method to associate the correct :colors key and returns the
+#array of colors associated with that key
  def team_colors(teamName)
    teamSelect(teamName)[:colors]
 
  end
+
+#Uses the teams helper method and collects the keys :team_names into an array while returning that array
+def team_names
+  teams.collect do|key|
+    key[:team_names]
+  end
+end
