@@ -199,6 +199,3 @@ def player_numbers(teamName)
     stats[:number]
   end
 end
-
-
-
