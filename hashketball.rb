@@ -170,9 +170,11 @@ end
 
  #Helper Method that finds and selects a team by searching through the keys for the symbol(key)
  #:team_name and then confirms that its value is equal to argument given when called, Then
- #returns with the team's name
+ #returns with that team and its values
  def teamSelect(teamName)
    teams.find do|key|
      key[:team_name] == teamName
    end
  end
+
+ 
