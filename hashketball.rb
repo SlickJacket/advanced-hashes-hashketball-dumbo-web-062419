@@ -208,7 +208,7 @@ def biggestShoes
   end
 end
 
-#Using biggestShoes helper method to select and return their name and rebounds
+#Using biggestShoes helper method to select and return their rebounds
 def big_shoe_rebounds
   biggestShoes[1][:rebounds]
 end
