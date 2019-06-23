@@ -243,3 +243,8 @@ def winning_team
     "Charlotte Hornets"
   end
 end
+
+def longestName
+  players.max_by(&:length)
+
+end
