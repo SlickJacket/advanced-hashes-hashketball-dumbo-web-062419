@@ -158,6 +158,7 @@ def num_points_scored(playerName)
   stats(playerName)[:points]
 end
 
+#shoe_size also uses the stats method to find the shoe size of particular player
 def shoe_size(playerName)
   stats(playerName)[:shoe]
 end
