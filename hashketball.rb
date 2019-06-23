@@ -223,3 +223,12 @@ end
 def most_points_scored
   mostPoints[0]
 end
+
+def homeTeamPoints
+  teamSelect("Brooklyn Nets")[:players].collect do |name, stats|
+    stats[:points]
+  end
+end
+
+def awayTeamPoints
+  teamSelect("Charlotte Hornets")[:players]
