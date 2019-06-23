@@ -226,7 +226,7 @@ end
 
 def homeTeamPoints
   teamSelect("Brooklyn Nets")[:players].collect do |name, stats|
-    stats[:points]
+    stats[:points].sum
   end
 end
 
