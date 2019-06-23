@@ -155,7 +155,7 @@ end
 #num_points_scored takes advantage of the stats helper method to iterate through the player's
 #nested hash of stats to find and display the :points of that player
 def num_points_scored(playerName)
-  stats(playerName)[:points]
+  player_stats(playerName)[:points]
 end
 
 #shoe_size also uses the stats method to find the shoe size of particular player
