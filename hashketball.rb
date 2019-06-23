@@ -154,4 +154,6 @@ end
 
 #num_points_scored takes advantage of the stats helper method to iterate through the player's
 #nested hash of stats to find and display the :points of that player
-def num
+def num_points_scored(playerName)
+  stats(playerName)[:points]
+end
