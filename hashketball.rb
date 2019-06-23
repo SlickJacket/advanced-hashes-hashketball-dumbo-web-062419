@@ -148,7 +148,7 @@ def players
 end
 
 #Helper Method that collects the stats of a player
-def stats(playerName)
+def player_stats(playerName)
   players[playerName]
 end
 
