@@ -190,3 +190,7 @@ def team_names
     key[:team_name]
   end
 end
+
+def player_numbers(teamName)
+  teamSelect(teamName)[:players].collect do|name, stats|
+    
