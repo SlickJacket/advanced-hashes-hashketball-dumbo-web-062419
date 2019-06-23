@@ -201,9 +201,14 @@ def player_numbers(teamName)
 end
 
 #Breaking the method down with this helper method to find the person with the largest shoe size
-#using the .max_by method to select the stats[:shoe] size that is the largest
+#using the .max_by method to select the person with the largest shoe size and return their name and stats
 def biggestShoes
   players.max_by do|name, stats|
     stats[:shoe]
   end
+end
+
+#Using biggestShoes helper method to select and return their name and rebounds
+def big_shoe_rebounds
+  biggestShoes[1][:rebounds]
 end
