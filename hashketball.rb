@@ -218,29 +218,36 @@ end
 
 #       ****BONUS****
 
-
+#Gathers the name and stats of the person with the most points and returns it as an array
 def mostPoints
   players.max_by do|name, stats|
     stats[:points]
   end
 end
 
+#Pulls from the helper method mostPoints index [0] where the name of the player with the most points
+#resides.
 def most_points_scored
   mostPoints[0]
 end
 
+#Helper Method designed to collect the points of the home team into an array
 def homeTeamPoints
   teamSelect("Brooklyn Nets")[:players].collect do |name, stats|
     stats[:points]
   end
 end
 
+#Helper Method designed to collect the points of the away team into an array
 def awayTeamPoints
   teamSelect("Charlotte Hornets")[:players].collect do|name, stats|
     stats[:points]
   end
 end
 
+#Check to see if the sum of homeTeamPoints is greater than the sum of the awayTeamPoints
+#IF true, then the home team (Brooklyn Nets) is annouced the winner, else, if false
+#the away team (Charlotte Hornets) is annouced the winner.
 def winning_team
   if homeTeamPoints.sum > awayTeamPoints.sum
     "Brooklyn Nets"
@@ -249,12 +256,15 @@ def winning_team
   end
 end
 
+#Helper Method to collect all of the player names into an array
 def longestName
   players.collect do|name, stats|
     name
   end
 end
 
+#Uses the array returned by the helper method longestName, searches for the longest string
+#in that array of names, and returns that players name.
 def player_with_longest_name
   longestName.max_by(&:length)
 end
