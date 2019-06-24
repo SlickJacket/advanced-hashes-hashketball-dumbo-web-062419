@@ -214,6 +214,11 @@ def big_shoe_rebounds
   biggestShoes[1][:rebounds]
 end
 
+
+
+#       ****BONUS****
+
+
 def mostPoints
   players.max_by do|name, stats|
     stats[:points]
@@ -253,6 +258,8 @@ end
 def player_with_longest_name
   longestName.max_by(&:length)
 end
+
+#       ****SUPER BONUS****
 
 def mostSteals
   players.max_by do|name, stats|
