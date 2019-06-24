@@ -255,5 +255,3 @@ def player_with_longest_name
 end
 
 def mostSteals
-  
-  
