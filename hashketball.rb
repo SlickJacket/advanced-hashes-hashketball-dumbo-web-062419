@@ -255,3 +255,6 @@ def player_with_longest_name
 end
 
 def mostSteals
+  players.max_by do|name, stats|
+    stats[:steals]
+  end
