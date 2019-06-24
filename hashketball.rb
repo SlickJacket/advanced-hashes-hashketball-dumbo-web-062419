@@ -245,8 +245,9 @@ def winning_team
 end
 
 def longestName
-  players.max_by(&:length)
-
+  players.collect do|name, stats|
+    name
+  end
 end
 
 def player_with_longest_name
