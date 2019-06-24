@@ -261,12 +261,16 @@ end
 
 #       ****SUPER BONUS****
 
+#Helper method to find the player with the most steals and creating an array of that player's name
+#and their stats
 def mostSteals
   players.max_by do|name, stats|
     stats[:steals]
   end
 end
 
+#Uses the return value of player_with_longest_name, "Bismack Biyombo", and compares that with the return value
+#of mostSteals array, index of [0], which is the name of the player
 def long_name_steals_a_ton
   if player_with_longest_name == mostSteals[0]
     true
