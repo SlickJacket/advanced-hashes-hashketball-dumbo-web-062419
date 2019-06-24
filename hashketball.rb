@@ -251,5 +251,5 @@ def longestName
 end
 
 def player_with_longest_name
-  longestName[0]
+  longestName.max_by(&:length)
 end
