@@ -258,3 +258,12 @@ def mostSteals
   players.max_by do|name, stats|
     stats[:steals]
   end
+end
+
+def long_name_steals_a_ton
+  if player_with_longest_name == mostSteals[0] 
+    true
+  else
+    false
+  end
+end
